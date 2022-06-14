@@ -1,0 +1,75 @@
+/* base css  */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    background-color: #7e7e7e;
+    height: 500px; 
+
+    /* JUSTIFY CONTENT  */
+    /* puts items at the end of container */
+    /* justify-content: end; */
+
+    /* puts items at the start of container  */
+    /* justify-content: start; */
+
+    /* puts items at the center of container  */
+    /* justify-content: center; */
+
+    /* puts remaining space around items equally  */
+    /* justify-content: space-around; */
+
+    /* puts remaining space between items  */
+    /* justify-content: space-between; */
+  
+
+    /* ALIGN ITEMS  */
+    /* align-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+
+    /* COLUMN AND FLEX DIRECTION  */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    /* FLEX WRAP  */
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #254de4;
+    color: white;
+    margin: 10px;
+    /* CENTERING CONTENT WITH FLEXBOX  */
+    align-items: center;
+    justify-content: center;
+}
+
+/* ALIGN SELF  */
+.item:nth-of-type(1){
+    order: 3;
+    /* align-self: center; */
+}
+.item:nth-of-type(2){
+    order: 1;
+    /* align-self: start; */
+}
+.item:nth-of-type(3){
+    order: 2;
+    /* align-self: end; */
+}
+
+
