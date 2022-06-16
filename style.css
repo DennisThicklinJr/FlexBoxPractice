@@ -11,7 +11,7 @@ body{
 }
 
 .flex-container{
-    display: flex;
+    display: flex; 
     background-color: #7e7e7e;
     height: 500px; 
 
@@ -38,11 +38,11 @@ body{
     /* align-items: end; */
 
     /* COLUMN AND FLEX DIRECTION  */
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
-    /* FLEX WRAP  */
+    /* FLEX WRAP - causes elements to go to next line when there is no space left*/
     flex-wrap: wrap;
 }
 
@@ -56,20 +56,39 @@ body{
     /* CENTERING CONTENT WITH FLEXBOX  */
     align-items: center;
     justify-content: center;
+    flex-basis: 500px;
+    /* the minimum width of an element. if you go below this width the element will wrap*/
+    /* flex-basis: 500px; */
+
+    /* flex property - combines all of the flex attributes  */
+    /* flex: 1 0 300px; */
+
+
+    flex: 1; /*flex-grow: 1, flex-shrink: 0, flex-basis: 0;*/ 
 }
 
 /* ALIGN SELF  */
 .item:nth-of-type(1){
-    order: 3;
-    /* align-self: center; */
+    /* order: 3; */
+    /* align-self: start; */
+
+    /* flex-grow: 2; */
+
+    /* flex-shrink: 1; */
 }
 .item:nth-of-type(2){
-    order: 1;
-    /* align-self: start; */
+    /* order: 3; */
+    /* align-self: center; */
+    /* flex-grow: 1; */
+
+    /* flex-shrink: 2; */
 }
 .item:nth-of-type(3){
-    order: 2;
+    /* order: 2; */
     /* align-self: end; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
 }
 
 
+/* FLEX BASIS, FLEX GROW, FLEX SHRINK, THE FLEX PROPERTY  */
